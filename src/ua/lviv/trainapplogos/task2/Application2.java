@@ -33,14 +33,14 @@ public class Application2 {
 		method.invoke(newInstancePerson); //BreakSession()
 		
 		Method method2 = sc.getMethod("OutputGritting", String.class);
-		method2.invoke(newInstancePerson, "Hello student");
+		method2.invoke(newInstancePerson, "Hello");
 		
-		Class<?>[] paramTypes = {String.class, String.class};
+		Class<?>[] paramTypes = {String.class, int.class};
 
 		Method method3 = sc.getMethod("OutputGritting", paramTypes);
 //		Method method3 = sc.getMethod("OutputGritting", String.class, String.class);
 		
-		method3.invoke(newInstancePerson, "Hello student", "New-York");
+		method3.invoke(newInstancePerson, "Hello", 4);
 		
 		
 	}

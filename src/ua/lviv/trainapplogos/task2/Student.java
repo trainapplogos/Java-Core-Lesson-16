@@ -101,16 +101,16 @@ public class Student extends Person implements SessionStages  {
 		System.out.println("Session was breaked!"); 
 	}
 	
-	public void OutputGrittingByYear(int yearOfStudy) {
-		System.out.println("!!!Hello student of " + yearOfStudy + "!");
+	public void OutputGritting(String greeting, int yearOfStudy) {
+		System.out.println(greeting + " " + this.name + ", student of " + yearOfStudy + " year!");
 	}
 
 	public void OutputGritting(String greeting) {
-		System.out.println(greeting + " " + this.name + "!");
+		System.out.println(greeting + " student " + this.name + "!");
 	}
 	
 	public void OutputGritting(String greeting, String city) {
-		System.out.println(greeting + " " + this.name + " from " + city + "!");
+		System.out.println(greeting + " student " + this.name + " from " + city + "!");
 	}
 	
 	
